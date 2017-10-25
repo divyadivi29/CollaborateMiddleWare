@@ -5,7 +5,10 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
-        <dependent-module archiveName="Collaborate-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Collaborate/Collaborate">
+        <dependent-module archiveName="Backend-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/CollaborateBackend/CollaborateBackend">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ojdbc6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/oraclexe/app/oracle/product/11.2.0/server/jdbc/lib/ojdbc6.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="context-root" value="CollaborateMiddleWare"/>
